@@ -270,7 +270,7 @@ function updateSummary(subtotal) {
   }
 
   const taxRate = 0;
-  const shipping = 4.99;
+  const shipping = 0;
   const tax = subtotal * taxRate;
   const total = subtotal + tax + shipping;
 
