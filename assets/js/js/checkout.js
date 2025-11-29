@@ -125,7 +125,7 @@ function setupPaymentToggling() {
 
 function updateTotals(subtotal) {
   const taxRate = 0;
-  const shipping = subtotal > 0 ? 4.99 : 0;
+  const shipping = subtotal > 0 ? 0 : 0;
   const tax = subtotal * taxRate;
   const total = subtotal + tax + shipping;
 
@@ -192,8 +192,8 @@ function setupPlaceOrder(user, items, subtotal, isDirectBuy) {
         paymentMethod: paymentMethod,
         totals: {
           subtotal: subtotal,
-          shipping: 4.99,
-          total: subtotal + 4.99
+          shipping: 0,
+          total: subtotal + 0
         },
         status: "Confirmed",
         createdAt: new Date()
