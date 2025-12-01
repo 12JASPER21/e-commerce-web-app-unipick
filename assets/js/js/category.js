@@ -319,11 +319,11 @@ function attachControls() {
   if (priceRange) {
     priceRange.addEventListener("change", () => {
       const v = priceRange.value;
-      if (v === "Under $25") activeFilters.price = [0, 25];
-      else if (v === "$25 to $50") activeFilters.price = [25, 50];
-      else if (v === "$50 to $100") activeFilters.price = [50, 100];
-      else if (v === "$100 to $200") activeFilters.price = [100, 200];
-      else if (v === "$200 & Above") activeFilters.price = [200, null];
+      if (v === "Under ₱25") activeFilters.price = [0, 25];
+      else if (v === "₱25 to ₱50") activeFilters.price = [25, 50];
+      else if (v === "₱50 to ₱100") activeFilters.price = [50, 100];
+      else if (v === "₱100 to ₱200") activeFilters.price = [100, 200];
+      else if (v === "₱200 & Above") activeFilters.price = [200, null];
       else delete activeFilters.price;
       applyFilters();
     });
